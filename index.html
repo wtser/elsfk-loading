@@ -181,13 +181,13 @@
         </div>
     </div>
     <script>
-    var totalTime = 20;
+    var totalTime = 99;
     function alertSet(e) {
         document.getElementById("js-alert-box").style.display = "block", document.getElementById("js-alert-head").innerHTML = e;
         var t = totalTime,
             n = document.getElementById("js-sec-circle");
         document.getElementById("js-sec-text").innerHTML = t, setInterval(function() {
-            if (0 == t) { return;window.location.href = 'https://baidu.com';}
+            if (0 == t) { window.location.href = 'https://baidu.com';}
             else {
                 t -= 1, document.getElementById("js-sec-text").innerHTML = t;
                 var e = Math.round(t / totalTime * 735);
